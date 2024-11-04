@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="580.0" prefWidth="720.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.giocatori.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Nome giocatore:" />
+   <TextField />
+   <Label text="Cognome giocatore:" />
+   <TextField />
+   <Label text="Numero di goal:" />
+   <TextField />
+   <GridPane prefHeight="179.0" prefWidth="680.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Button mnemonicParsing="false" prefHeight="107.0" prefWidth="383.0" text="aggiungere un giocatore alla squadra, controllando che non ci sia più di un capitano" />
+         <Button mnemonicParsing="false" prefHeight="76.0" prefWidth="417.0" text="visualizzare tutti i giocatori della squadra" GridPane.columnIndex="1" />
+         <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="475.0" text="modificare i dati di un giocatore a scelta" GridPane.rowIndex="1" />
+         <Button mnemonicParsing="false" prefHeight="93.0" prefWidth="452.0" text="cancellare un giocatore dalla squadra" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="417.0" text="visualizzare i giocatori che hanno realizzato più di 5 goal." GridPane.rowIndex="2" />
+         <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="377.0" text="visualizzare il nome del capitano" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <Button mnemonicParsing="false" prefHeight="105.0" prefWidth="456.0" text="assegnare il ruolo di capitano in modo casuale se non ancora presente" GridPane.rowIndex="3" />
+      </children>
+   </GridPane>
+</VBox>
