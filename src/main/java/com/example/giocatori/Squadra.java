@@ -25,7 +25,7 @@ public class Squadra {
     public String getNomeAllenatore(){
         return nomeAllenatore;
     }
-    public void setNomeAllerntore(String n){
+    public void setNomeAllenatore(String n){
         nomeAllenatore = n;
     }
     public Giocatore[] setRosa(){
@@ -47,7 +47,6 @@ public class Squadra {
 
         String s = "";
         for (int i = 0; i<contatore; i++){
-            //s = s + rosa[contatore].getNome() + " " + rosa[contatore].getGoal() + " " + rosa[contatore].getCapitano() + "\n";
             System.out.println(rosa[contatore].getNome() + " " + rosa[contatore].getGoal() + " " + rosa[contatore].getCapitano() + "\n");
         }
         System.out.println(s);
@@ -82,4 +81,14 @@ public class Squadra {
         }
         return giocatore-1;
     }
+
+    public void visualizzaGoal (int goal){
+        for (int i=0; i < contatore; i++){
+            if (rosa[i].getGoal()>5){
+                System.out.println(rosa[i]);
+            }
+        }
+    }
+
+
 }

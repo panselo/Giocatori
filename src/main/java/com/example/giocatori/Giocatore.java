@@ -7,6 +7,9 @@ public class Giocatore {
     private int goal;
 
 
+    public String toString (){
+        return "Nome: " + this.nome + " Capitano: " + this.capitano + " Goal: " + this.goal;
+    }
 
 
     public String getNome(){
