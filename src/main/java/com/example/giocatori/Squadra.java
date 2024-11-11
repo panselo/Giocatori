@@ -5,13 +5,14 @@ public class Squadra {
     private String nomeSquadra;
     private String nomeAllenatore;
     private Giocatore [] rosa;
-    private int contatore = 0;
+    private int contatore ;
 
     public Squadra(String nomeSquadra, String nomeAllenatore){
 
         this.nomeSquadra = nomeSquadra;
         this.nomeAllenatore = nomeAllenatore;
         rosa = new Giocatore [30];
+        contatore=0;
 
     }
 
@@ -32,13 +33,11 @@ public class Squadra {
         return rosa;
     }
 
-    public boolean aggiuntaGiocatore(Giocatore g){
+    public void aggiuntaGiocatore(Giocatore g){
 
-        if (contatore < 30){
-            rosa [contatore] = g;
-            return true;
-        } else {
-            return false;
+        if (contatore < 30) {
+            rosa[contatore] = g;
+            contatore++;
         }
 
     }
@@ -47,9 +46,8 @@ public class Squadra {
 
         String s = "";
         for (int i = 0; i<contatore; i++){
-            System.out.println(rosa[contatore].getNome() + " " + rosa[contatore].getGoal() + " " + rosa[contatore].getCapitano() + "\n");
+            s+=rosa[i]+"\n";
         }
-        System.out.println(s);
         return s;
 
     }
@@ -71,7 +69,6 @@ public class Squadra {
         int pos = ricerca(nome);
         rosa[pos].setNome(nomeNuovo);
         rosa[pos].setGoal(goalNuovo);
-        rosa[pos].setCapitano(capitanoNuovo);
 
     }
 
