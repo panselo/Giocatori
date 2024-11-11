@@ -41,7 +41,7 @@ public class Test {
                     System.out.println("Goal nuovo giocatore: ");
                     goal = in.nextInt();
                     //in.nextLine();
-                    Giocatore g = new Giocatore(nome, capitano, goal);
+                    Giocatore g = new Giocatore(nome, capitano);
                     s.aggiuntaGiocatore(g);
                     conta++;
                     break;

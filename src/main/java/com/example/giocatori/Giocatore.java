@@ -3,12 +3,11 @@ package com.example.giocatori;
 public class Giocatore {
 
     private String nome;
-    private String capitano;
     private int goal;
 
 
     public String toString (){
-        return "Nome: " + this.nome + " Capitano: " + this.capitano + " Goal: " + this.goal;
+        return "Nome: " + this.nome  + " Goal: " + this.goal;
     }
 
 
@@ -19,14 +18,6 @@ public class Giocatore {
         nome = n;
     }
 
-
-
-    public String getCapitano(){
-        return capitano;
-    }
-    public void setCapitano(String cap){
-        capitano = cap;
-    }
 
 
 
@@ -42,14 +33,12 @@ public class Giocatore {
     }
 
 
-    public Giocatore(String nomeNuovo, String capitanoNuovo, int goalNuovo) {
+    public Giocatore(String nomeNuovo, int goalNuovo) {
         setNome(nomeNuovo);
-        setCapitano(capitanoNuovo);
         setGoal(goalNuovo);
     }
     public Giocatore (){
         setNome(null);
-        setCapitano(null);
         setGoal(0);
     }
 
